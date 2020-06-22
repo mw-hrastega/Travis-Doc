@@ -13,7 +13,7 @@ When you include `language: matlab` in `.travis.yml`:
 
 If your source code is organized into files and folders within a [MATLAB project](https://www.mathworks.com/help/matlab/projects.html), then MATLAB runs any test files in the project that have been labeled as `Test`. If your code does not leverage a MATLAB project, then MATLAB runs all tests in the root of your repository, including its subfolders.
 
-You can override the default test run and generate artifacts by creating a test runner and customizing the runner with the plugin classes in the [matlab.unittest.plugins](https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins-package.html) package. For more information on how to specify MATLAB commands, see [Run MATLAB Commands](#run-matlab-commands). 
+You can override the default test run and generate artifacts by creating a test runner and customizing the runner with the plugin classes in the [matlab.unittest.plugins](https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins-package.html) package. For more information on how to specify and run MATLAB commands, see [Run MATLAB Commands](#run-matlab-commands). 
 
 ## Run MATLAB Commands
 
