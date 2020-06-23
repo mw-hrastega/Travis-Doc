@@ -6,16 +6,16 @@ To run MATLAB&reg; code and Simulink&reg; models as part of your pipeline, speci
 language: matlab
 ``` 
 
-When you include `language: matlab` in `.travis.yml`:
+When you include `language: matlab` in your `.travis.yml`:
 
 * Travis CI installs the latest release of MATLAB on a Linux&reg;-based build agent.
 * MATLAB runs the tests in your repository and fails the build if any of the tests fails. 
 
 If your source code is organized into files and folders within a [MATLAB project](https://www.mathworks.com/help/matlab/projects.html), then MATLAB runs any test files in the project that have been labeled as `Test`. If your code does not leverage a MATLAB project, then MATLAB runs all tests in the root of your repository, including its subfolders.
 
-You can override the default test run and generate artifacts by creating a test runner and customizing the runner with the plugin classes in the [`matlab.unittest.plugins`](https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins-package.html) package. For more information on how to specify and run MATLAB commands, see [Run MATLAB Commands](#run-matlab-commands). 
+You can override the default test run and generate artifacts by creating a test runner and customizing the runner with the plugin classes in the [`matlab.unittest.plugins`](https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins-package.html) package. For more information on how to specify and run MATLAB commands, see [Run Custom MATLAB Commands](#run-custom-matlab-commands). 
 
-## Run MATLAB Commands
+## Run Custom MATLAB Commands
 
 To run MATLAB scripts, functions, and statements in your pipeline, use the [`matlab`](https://www.mathworks.com/help/matlab/ref/matlablinux.html) command with the `-batch` option. `matlab -batch` starts MATLAB non-interactively and runs the specified script, function, or statement. For example, call the `disp` function as part of your pipeline.
 
