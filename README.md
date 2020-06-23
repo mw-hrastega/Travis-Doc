@@ -17,7 +17,7 @@ You can override the default test run and generate artifacts by creating a test 
 
 ## Run Custom MATLAB Commands
 
-To run MATLAB scripts, functions, and statements in your pipeline, use the [`matlab`](https://www.mathworks.com/help/matlab/ref/matlablinux.html) command with the `-batch` option. `matlab -batch` starts MATLAB non-interactively and runs the specified script, function, or statement. For example, call the `disp` function as part of your pipeline.
+You can specify the `script` key in your `.travis.yml` to build on the functionality provided by`language: matlab`. To run custom MATLAB commands in your pipeline, use the [`matlab`](https://www.mathworks.com/help/matlab/ref/matlablinux.html) command with the `-batch` option. `matlab -batch` starts MATLAB non-interactively and runs the specified script, function, or statement. For example, call the `disp` function as part of your pipeline.
 
 ```YAML
 language: matlab
