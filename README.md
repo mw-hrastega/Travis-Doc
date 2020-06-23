@@ -17,7 +17,7 @@ You can override the default test run and generate artifacts by creating a test 
 
 ## Run Custom MATLAB Commands
 
-You can specify the `script` key in your `.travis.yml` to build on the functionality provided by`language: matlab`. To run custom MATLAB commands in your pipeline, use the [`matlab`](https://www.mathworks.com/help/matlab/ref/matlablinux.html) command with the `-batch` option. `matlab -batch` starts MATLAB non-interactively and runs the specified script, function, or statement. For example, call the `disp` function as part of your pipeline.
+You can specify the `script` key in your `.travis.yml` to build on the functionality provided by`language: matlab`. To run custom MATLAB commands in your pipeline, use the [`matlab`](https://www.mathworks.com/help/matlab/ref/matlablinux.html) command with the `-batch` option. `matlab -batch` starts MATLAB noninteractively and runs the specified script, function, or statement. For example, call the `disp` function as part of your pipeline.
 
 ```YAML
 language: matlab
@@ -30,7 +30,7 @@ language: matlab
 script: matlab -batch 'results = runtests, assertSuccess(results);'
 ``` 
 
-You also can write a MATLAB script or function as part of your repository and execute this script or function. For example, run the commands in a file named `myscript.m` in the root of your repository. (To run a MATLAB script or function, do not specify the file extension.)
+You can write a MATLAB script or function as part of your repository and execute this script or function. For example, run the commands in a file named `myscript.m` in the root of your repository. (To run a MATLAB script or function, do not specify the file extension.)
 
 ```YAML
 language: matlab
